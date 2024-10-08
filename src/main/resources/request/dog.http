@@ -1,0 +1,35 @@
+### create dog
+POST {{URL}}
+Content-Type: application/json
+
+{
+  "dogName": "Kaj",
+  "dogAge": 8,
+  "dogBreed": "POODLE",
+  "dogGender": "FEMALE"
+}
+
+### get all dogs
+
+GET {{URL}}
+
+### get dog by id
+
+GET {{URL}}/4
+
+### update dog
+
+PUT {{URL}}/2
+Content-Type: application/json
+
+{
+  "dogName": "Magnus",
+  "dogAge": 6,
+  "dogBreed": "GERMAN_SHEPHERD",
+  "dogGender": "MALE"
+}
+
+### delete dog
+
+DELETE {{URL}}/4
+
